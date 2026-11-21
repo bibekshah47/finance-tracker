@@ -1,15 +1,11 @@
 
-from flask import Flask
+from flask import Flask, render_template
 
-# Create our Flask application
 app = Flask(__name__)
 
-# Define the home page
 @app.route("/")
 def home():
-    return "<h1>My Finance Tracker</h1><p>Welcome to your personal finance dashboard!</p>"
+    return render_template("index.html")
 
-# Run the application
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
-
