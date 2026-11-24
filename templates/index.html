@@ -13,29 +13,31 @@
     <h1>My Finance Tracker</h1>
     <p>Take control of your money, one transaction at a time.</p>
 
+        
     <div class="dashboard">
 
         <div class="card">
             <h3>Monthly Income</h3>
-            <h2>$1,500</h2>
+            <h2>${{ "%.2f"|format(income) }}</h2>
         </div>
 
         <div class="card">
             <h3>Total Expenses</h3>
-            <h2>$850</h2>
+            <h2>${{ "%.2f"|format(expenses) }}</h2>
         </div>
 
         <div class="card">
             <h3>Savings</h3>
-            <h2>$300</h2>
+            <h2>${{ "%.2f"|format(savings) }}</h2>
         </div>
 
         <div class="card">
             <h3>Available Balance</h3>
-            <h2>$350</h2>
+            <h2>${{ "%.2f"|format(balance) }}</h2>
         </div>
 
     </div>
+
 
 </body>
 </html>
